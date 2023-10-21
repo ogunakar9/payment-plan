@@ -1,0 +1,38 @@
+@import "./styles/variables";
+@import "./styles/mixins";
+
+.app {
+  @include displayFlex(flex-start, center, column);
+  height: 100vh;
+}
+
+.plan {
+  @include displayFlex(space-between, center, column);
+  gap: 10px;
+  background-color: $red;
+  padding: 25px 94px;
+  border-radius: 0 0 10px 10px;
+  margin: 0 0 139px 0;
+
+  span {
+    color: $white;
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+  }
+
+  &__type {
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+.heading {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}

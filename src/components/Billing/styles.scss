@@ -1,0 +1,70 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.billing {
+  @include displayFlex(space-between, center, row);
+  gap: 16px;
+
+  &__month {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__year {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    &__input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    &__slider {
+      position: absolute;
+      cursor: pointer;
+      inset: 0;
+      background-color: $titanum-white;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      border-radius: 34px;
+
+      &:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: $light-grey;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        border-radius: 50%;
+      }
+    }
+
+    .checked {
+      background-color: $red;
+
+      &:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+        background-color: $titanum-white;
+      }
+    }
+  }
+
+  input:focus + .billing__switch__slider {
+    box-shadow: 0 0 1px $red;
+  }
+}
