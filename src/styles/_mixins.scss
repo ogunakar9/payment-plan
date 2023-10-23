@@ -10,3 +10,11 @@
   flex-direction: $flexDirection;
   flex-wrap: $wrap;
 }
+
+@mixin btnReset {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  color: white;
+}

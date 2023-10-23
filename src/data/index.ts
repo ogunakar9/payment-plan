@@ -14,7 +14,7 @@ export const starter = {
 
 export const pro = {
   title: "Pro",
-  money: "$99 / month",
+  price: "$99 / month",
   isDropdown: true,
   list: [
     "All starter features, plus:",

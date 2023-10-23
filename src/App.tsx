@@ -1,5 +1,5 @@
 import "./App.scss";
-import Billing from "./components/Billing";
+import { Billing, Starter, Pro, Enterprise } from "./components";
 
 function App() {
   return (
@@ -10,7 +10,11 @@ function App() {
       </div>
       <span className="heading">Choose a plan</span>
       <Billing />
-      <div></div>
+      <div className="plan-wrapper">
+        <Starter />
+        <Pro />
+        <Enterprise />
+      </div>
     </div>
   );
 }

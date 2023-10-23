@@ -36,3 +36,8 @@
   font-weight: 700;
   margin: 0 0 30px 0;
 }
+
+.plan-wrapper {
+  @include displayFlex(space-between, center, row, wrap);
+  gap: 20px;
+}

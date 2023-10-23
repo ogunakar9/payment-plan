@@ -4,6 +4,7 @@
 .billing {
   @include displayFlex(space-between, center, row);
   gap: 16px;
+  margin: 0 0 40px 0;
 
   &__month {
     color: white;
