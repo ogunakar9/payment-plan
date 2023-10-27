@@ -1,2 +1,29 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
+
+.pro-section {
+  padding: 37px 39px 35px 39px;
+  gap: 20px;
+
+  .MuiFormHelperText-root {
+    color: $red;
+  }
+
+  &__form {
+    .MuiFormControl-root {
+      color: $red;
+    }
+
+    .MuiFormLabel-root {
+      color: $red;
+    }
+
+    .MuiFormHelperText-root {
+      color: $red;
+    }
+
+    .MuiInputBase-root {
+      color: white;
+    }
+  }
+}
